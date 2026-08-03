@@ -1,0 +1,13 @@
+[project]
+name = "deep-app"
+version = "0.1.0"
+description = "Workspace member depending on the private member internal-scripts via a uv workspace source."
+requires-python = ">=3.9,<4.0"
+dependencies = ["internal-scripts"]
+
+[tool.uv.sources]
+internal-scripts = { workspace = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

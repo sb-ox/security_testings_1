@@ -1,0 +1,12 @@
+[project]
+name = "repro-oxdev-77637-workspace-root"
+version = "0.1.0"
+description = "Repro fixture for OXDEV-77637 - uv workspace whose transitive CVE is dropped when a lean/partial clone omits member manifests. Tagged repro-OXDEV-77637."
+requires-python = ">=3.9,<4.0"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[tool.uv]
+package = false

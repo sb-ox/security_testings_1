@@ -1,0 +1,10 @@
+[project]
+name = "internal-scripts"
+version = "0.1.0"
+description = "PRIVATE/INTERNAL workspace member - stands in for the customer's deep/internal_scripts (app 48381). starlette is a TRANSITIVE dep of this member, via fastapi."
+requires-python = ">=3.9,<4.0"
+dependencies = ["fastapi==0.92.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
