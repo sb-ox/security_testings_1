@@ -1,0 +1,13 @@
+# repro-OXDEV-83308 — deliberately vulnerable pinned deps to generate
+# GitHub Dependabot alerts on this repo for the OX Dependabot-connector repro.
+# Do not use for anything else. Cleanup: delete the repro-OXDEV-83308/ directory.
+django==2.2.0
+urllib3==1.24.1
+pyyaml==5.1
+requests==2.19.1
+flask==0.12.2
+jinja2==2.10
+cryptography==2.3
+pillow==5.2.0
+lxml==4.3.0
+paramiko==2.4.1
