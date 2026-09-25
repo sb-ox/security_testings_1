@@ -12,6 +12,7 @@ repositories {
 dependencies {
     compile 'org.eclipse.jetty:jetty-server:9.4.11.v20180605'
     testCompile 'org.eclipse.jetty:jetty-security:9.4.44.v20210927'
-    // Stands in for the customer's private libraries: Maven cannot resolve it, so the whole-file resolution fails.
-    compile 'commons-io:commons-io:[99.0,100.0)'
+    // Stands in for the customer's private libraries: calcite-core 1.10.0 needs pentaho-aggdesigner-algorithm,
+    // which is not on Maven Central, so the whole-file resolution fails.
+    compile 'org.apache.calcite:calcite-core:1.10.0'
 }
