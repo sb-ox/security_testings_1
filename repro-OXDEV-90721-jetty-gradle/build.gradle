@@ -13,3 +13,5 @@ dependencies {
     compile 'org.eclipse.jetty:jetty-server:9.4.11.v20180605'
     testCompile 'org.eclipse.jetty:jetty-security:9.4.44.v20210927'
 }
+
+// PROD PR scan trigger for OXDEV-90721
