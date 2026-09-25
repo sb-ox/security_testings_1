@@ -14,5 +14,6 @@ repositories {
 dependencies {
     compile 'org.eclipse.jetty:jetty-server:9.4.11.v20180605'
     testCompile 'org.eclipse.jetty:jetty-security:9.4.44.v20210927'
-    testCompile 'org.eclipse.jetty:jetty-server:9.4.44.v20210927'
+    // Stands in for the customer's private libraries: Maven cannot resolve it, so the whole-file resolution fails.
+    compile 'commons-io:commons-io:[99.0,100.0)'
 }
