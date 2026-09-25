@@ -1,0 +1,16 @@
+// OX QA repro fixture for OXDEV-90721 (PROD leg). Throwaway, removed after the run.
+// Same jetty lines as the customer, plus one internal-only artifact that Maven Central does not have.
+apply plugin: 'java'
+
+group = 'com.oxsecurity.repro'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.eclipse.jetty:jetty-server:9.4.11.v20180605'
+    compile 'com.oxsecurity.repro:internal-only-artifact:1.0.0'
+    testCompile 'org.eclipse.jetty:jetty-security:9.4.44.v20210927'
+}
