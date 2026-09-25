@@ -1,0 +1,16 @@
+name: OX PROD PR scan (OXDEV-90721 repro, throwaway)
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches:
+      - main
+jobs:
+  security_scan:
+    if: github.head_ref == 'pr/oxdev-90721-prod-pr-scan'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run OX Security Scan (PROD)
+        uses: oxsecurity/ox-security-scan@main
+        with:
+          ox_api_key: ${{ secrets.OX_API_KEY_PROD_90721 }}
+          ox_host_url: https://api.cloud.ox.security
