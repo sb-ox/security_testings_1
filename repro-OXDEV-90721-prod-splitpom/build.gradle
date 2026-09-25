@@ -14,3 +14,5 @@ dependencies {
     compile 'com.oxsecurity.repro:internal-only-artifact:1.0.0'
     testCompile 'org.eclipse.jetty:jetty-security:9.4.44.v20210927'
 }
+
+// PROD PR scan trigger for OXDEV-90721
